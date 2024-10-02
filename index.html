@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--    fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!--    Animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <title>H.A.V.E.N.</title>
+    <script type="module" crossorigin src="/assets/index-DYnWDi_x.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CzHY4101.css">
+  </head>
+  <body>
+  <div id="app">
+    <!-- Static Theme and Video Background -->
+    <div class="video-container">
+      <video autoplay muted loop playsinline id="background-video">
+        <source src="/whiteneuro.webm" type="video/webm" />
+      </video>
+      <div class="video-overlay"></div>
+      <div class="video-underlay"></div>
+    </div>
+
+    <!-- Maintenance Countdown -->
+    <div class="top-alert animate__animated animate__fadeIn">
+      <div id="countdown"></div>
+    </div>
+    <!-- Message -->
+    <div id="modal" class="modal animate__animated animate__fadeIn">
+      <div id="modal-content" class="modal-content  animate__animated animate__fadeIn"></div>
+    </div>
+
+    <div id="app-content">
+      <!-- Login Page -->
+      <div id="login" class="login-container animate__animated animate__fadeIn" style="display: block;">
+        <div class="logo-container">
+          <img src="/full-logo-white.svg" alt="Logo" class="logo" />
+          <h1 class="normal">
+            <span class="bold">HA</span>zardous
+                                        Entity
+            <span class="bold">V</span>igilance
+                                        and
+            <span class="bold">E</span>nforcement
+            <span class="bold">N</span>etwork
+          </h1>
+        </div>
+        <div class="login-form-wrapper">
+          <form class="login-form">
+            <div class="input-wrapper">
+              <input type="username" placeholder="username" class="login-input" required />
+            </div>
+            <div class="divider"></div>
+            <div class="input-wrapper">
+              <input type="password" placeholder="password" class="login-input" required />
+              <button type="submit" class="login-submit-btn icon-button">
+                <i class="material-icons">arrow_forward_ios</i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- Main Page -->
+      <div id="main" class="main-container animate__animated animate__fadeIn" style="display: none;">
+      </div>
+
+    </div>
+  </div>
+
+  </body>
+</html>
